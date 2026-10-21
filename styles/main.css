@@ -1,0 +1,57 @@
+
+
+body {
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+div > img {
+    border-style: dashed;
+    box-sizing: border-box;
+}
+
+#main-menu {
+    margin-top: 20px;
+    margin-left: 15px;
+    display: inline-block;
+}
+.menu-button {
+    background-color: red;
+    border: none;
+    color: white;
+
+    padding: 13px 35px;
+}
+
+.has-border {
+    border: grey solid 2px;
+}
+
+#page {
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+#content-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: calc(100% - 230px);
+    float: right;
+
+    padding-left: 5px;
+    padding-bottom: 25px;
+}
+#car-of-week-block img {
+    width: min(500px, 100%);
+}
+
+#filter {
+    position: fixed;
+    left: 5px;
+    top: 54px;
+    height: calc(100% - 70px);
+    width: 200px;
+}
