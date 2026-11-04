@@ -8,10 +8,15 @@ body {
 
 .box {
     border: 3px solid red;
+
     width: 60vw;
     height: 20vw;
     padding: 1rem;
     margin: 2rem;
 
     color: #212175;
+}
+
+div > blockquote {
+    color: red;
 }
