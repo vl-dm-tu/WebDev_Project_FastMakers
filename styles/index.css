@@ -1,0 +1,9 @@
+
+
+#car-of-week-block {
+    width: 99vw;
+    padding-bottom: 1rem;
+}
+#car-of-week-block > img {
+    width: min(30rem, 100%);
+}
