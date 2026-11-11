@@ -4,6 +4,11 @@ body {
     margin: 0;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 1rem;
+
+    background-image: url('../images/bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 div > img {
@@ -30,7 +35,7 @@ header {
 .menu-button {
     position: relative;
     
-    background-color: red;
+    background-color: #B30000;
     border: none;
     color: white;
 
@@ -39,7 +44,7 @@ header {
 
 .menu-button[href]:hover
 {
-    background-color: #ba0000;
+    background-color: #830000;
 }
 
 .has-border {
@@ -49,4 +54,21 @@ header {
 #page {
     margin-top: 3.3rem;
 }
+#main-heading {
+    color: rgb(44, 37, 37);
+}
 
+.box {
+    border: 3px solid red;
+
+    width: 60vw;
+    height: 70vh;
+    padding: 1rem;
+    margin: 2rem;
+
+    color: #212175;
+}
+
+div > blockquote {
+    color: red;
+}
