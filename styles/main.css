@@ -26,9 +26,9 @@ header {
 }
 
 #main-menu {
-    display: inline-block;
-
-    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    margin: 0.3rem;
 
     background-color: black;
 }
@@ -41,10 +41,11 @@ header {
 
     padding: 0.8rem 2rem;
 }
-
 .menu-button[href]:hover
 {
     background-color: #830000;
+
+    transition: 0.3s ease;
 }
 
 .has-border {
@@ -53,6 +54,7 @@ header {
 
 #page {
     margin-top: 3.3rem;
+
 }
 #main-heading {
     color: rgb(44, 37, 37);
@@ -62,13 +64,65 @@ header {
     border: 3px solid red;
 
     width: 60vw;
-    height: 70vh;
+    height: 75vh;
     padding: 1rem;
     margin: 2rem;
 
     color: #212175;
+
+    animation: appearing 1s ease;
+}
+
+@keyframes appearing {
+    from {
+        opacity: 0;
+        filter: blur(1px);
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 div > blockquote {
     color: red;
+}
+
+@media only screen and (max-device-width: 600px) {
+    body {
+        font-size: 2rem;
+    }
+    .menu-button {
+        padding: 2.5rem 6rem;
+
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .box {
+        width: 90%;
+    }
+    #main-menu {
+        justify-content: center;
+    }
+}
+@media only screen and (min-device-width: 600px) {
+    .menu-button {
+        padding: 0.8rem 3rem;
+
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #main-menu {
+        justify-content: center;
+    }
+}
+@media only screen and (min-device-width: 1024px) {
+    .menu-button {
+        padding: 0.8rem 2rem;
+
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    #main-menu {
+        justify-content: flex-start;
+    }
 }
